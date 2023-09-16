@@ -5,7 +5,7 @@ console.log(data);
 
 console.log("********************");
 
-fs.writeFileSync("./input.txt", `${data} \n\t\t by Bekzodali`)
+fs.writeFileSync("./input.txt", `${data} \n\t\t by Bekzodali`);
 const new_data = fs.readFileSync('./input.txt', 'utf8');
 console.log(new_data);
 /** 
