@@ -1,15 +1,9 @@
-function getDigits(input_string) {
-    let digit_count = 0;
+function checkSimilarity(shoptoli1, shoptoli2) {
   
-    for (const char of input_string) {
-      if (!isNaN(parseInt(char))) {
-        digit_count += 1;
-      }
-    }
+  //shoptoli1 = shoptoli1;
+  //shoptoli2 = shoptoli2;
   
-    return digit_count;
-  }
-  
-  const result = getDigits("ag1aw5g6");
-  console.log(result); 
-  
+  return shoptoli1.split('').sort().join('') === shoptoli2.split('').sort().join('');
+}
+const result = checkSimilarity("laepp", "apple");
+console.log(result); 
